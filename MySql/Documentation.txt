@@ -1,0 +1,23 @@
+MySql with Pycharm Documentation
+
+Common steps for functioning with MySql on Pycharm
+
+Step 1 - Install package(mysql-connector) if not installed already
+Step 2 - Import library in the Pycharm environment (mysql.connector)
+Step 3 - Initialize a MySql object that connects with the Sql server
+  Steps in Step 3 - 
+  - var = mysql.connector.connect(host = "localHostName",           
+              user = "root", password = "password")
+Step 4 - Initialize a cursor object with the "var" class defined above.
+          This cursor object will let you execute commands in the sql server.
+
+-----------------------------------------------------------------------------------------
+**Cursor Object**
+
+Some of the commands of the cursor object are
+PS - All the character inside the execute statement should be caps
+
+'''cursorObject.execute("CREATE DATABASE DBNAME")''' - Creates a database in the mysql server with the name "DBNAME".
+'''cursorObject.execute("SHOW DATABASES")''' - Loads all the database names from the mysql server
+  ***Follow up command to see the Database names***
+    Loop the cursorObject and print the current index object(i)
