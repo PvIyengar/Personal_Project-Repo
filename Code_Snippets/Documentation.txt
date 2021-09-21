@@ -1,0 +1,14 @@
+---------------------------------------------------------------------------
+*One Variable_fill null values*
+Calculate Median of the column by dropping the NA's from the column
+and then replace the nan's with median using a if statement
+median_column = df['Column'].dropna().median()
+
+now to find all the null and substitute the values with median
+if len(df.column[ df.column.isnull() ]) > 0:
+  df.loc[(df.column.isnull()),'column'] = median_column
+----------------------------------------------------------------------------
+
+
+
+    
