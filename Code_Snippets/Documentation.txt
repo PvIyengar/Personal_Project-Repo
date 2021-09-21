@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------
-*One Variable_fill null values*
+*OneVariable_fill missing values*
 Calculate Median of the column by dropping the NA's from the column
 and then replace the nan's with median using a if statement
 median_column = df['Column'].dropna().median()
